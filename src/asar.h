@@ -1,4 +1,4 @@
-#if (defined(__sun__) || defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__)) && !defined(linux)
+#if (defined(__APPLE__) || defined(__sun__) || defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__)) && !defined(linux)
 #error Please use -Dlinux on non-Linux Unix-likes.
 #endif
 
