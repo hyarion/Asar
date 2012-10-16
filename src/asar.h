@@ -2,8 +2,8 @@
 #error Please use -Dlinux on non-Linux Unix-likes.
 #endif
 
-#if defined(linux) && !defined(stricmp)
-#error Please use -Dstricmp=strcasecmp on Unix-like systems.
+#if defined(linux) && (!defined(stricmp) || !defined(strnicmp))
+#error Please use -Dstrnicmp=strncasecmp on Unix-like systems.
 #endif
 
 #pragma once
